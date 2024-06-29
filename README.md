@@ -15,6 +15,9 @@ Resiliência a Censura: Por ser uma rede distribuída e anônima, o I2P é resis
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
 ``` INSTALAÇÃO DA I2P NO WINDOWS
 
   acessar a pagína da i2p  https://geti2p.net/en/
