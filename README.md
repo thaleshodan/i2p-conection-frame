@@ -13,7 +13,7 @@ Segurança de Dados: A criptografia forte e o roteamento descentralizado do I2P 
 
 Resiliência a Censura: Por ser uma rede distribuída e anônima, o I2P é resistente a tentativas de censura e bloqueio por parte de governos ou outras entidades.
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 
 
