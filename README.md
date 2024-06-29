@@ -15,9 +15,7 @@ Resiliência a Censura: Por ser uma rede distribuída e anônima, o I2P é resis
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-``` instalação da conexão I2P no Windows
+``` INSTALAÇÃO DA I2P NO WINDOWS
 
   acessar a pagína da i2p  https://geti2p.net/en/
   baixar arquivo .exe no seu navegador
@@ -25,16 +23,17 @@ Resiliência a Censura: Por ser uma rede distribuída e anônima, o I2P é resis
 
 ```
 
-```configuração da I2P no windows
+```CONFIGURAÇÃO DA REDE I2P NO WINDOWS
 
   Após a instalação, abra o atalho do I2P que foi criado no menu Iniciar ou na área de trabalho.
 O I2P iniciará e abrirá uma página web no seu navegador padrão (geralmente em http://127.0.0.1:7657
 
 
+```
 
 
- instalação da I2P no linux
-
+   INSTALAÇÃO DA REDE I2P NO LINUX 
+```
 
 adicionar repo I2P
 
@@ -49,8 +48,7 @@ instalar a conexão I2P
 
 sudo apt-get install i2p
 
-
-inicializar a conexão i2p
+INICIALIZAR A CONEXÃO I2P
 
 sudo service i2p start
 
