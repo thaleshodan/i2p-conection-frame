@@ -45,3 +45,43 @@ O I2P é uma *overlay network* (rede sobreposta) descentralizada que permite com
 ```bash
 echo "deb http://deb.i2p2.de/ unstable main" | sudo tee /etc/apt/sources.list.d/i2p.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xE6C1A57B
+
+```
+
+
+
+ ## Atualizando os pacotes
+
+
+   sudo apt-get update
+
+   sudo apt-get install i2p
+
+   sudo service i2p start
+
+
+
+
+   
+
+   ## Configuração Avançada
+
+   `` Use proxychains para redirecionar o tráfego de aplicações específicas via túnel I2P.
+
+  `  Integre com navegadores, crawlers ou scanners para navegação anônima.
+
+  `  Combine com VPN e DNS seguro para uma stack de privacidade completa.
+
+
+
+ ## Estrutura Recomendada
+
+
+
+``` i2p-connection-frame/
+│
+├── docs/               Documentação teórica e técnica
+├── scripts/            Scripts de automação de setup
+├── configs/            Arquivos de configuração exemplo
+├── examples/           Casos de uso e integração
+└── README.md           Instruções gerais
