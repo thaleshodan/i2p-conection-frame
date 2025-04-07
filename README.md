@@ -76,6 +76,8 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xE6C1A57
  ## Estrutura Recomendada 
  
    
+
+```
    i2p-connection-frame/
 │
 ├── docs/               Documentação teórica e técnica
@@ -83,3 +85,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xE6C1A57
 ├── configs/            Arquivos de configuração exemplo
 ├── examples/           Casos de uso e integração
 └── README.md           Instruções gerais
+
+``
+
+
