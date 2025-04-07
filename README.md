@@ -73,7 +73,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xE6C1A57
   `  Combine com VPN e DNS seguro para uma stack de privacidade completa.
 
 
-```   ## Estrutura Recomendada ##
+ ## Estrutura Recomendada 
  
    
    i2p-connection-frame/
