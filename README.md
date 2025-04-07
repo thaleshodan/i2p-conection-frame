@@ -1,51 +1,67 @@
-# i2p-conection-frame
-Um modelo de filtro de rede anônima I2P e como aplicá-lo na sua internet para manter o anonimato e proteger seus dados sensíveis contra espionagem, além de como acessar as camadas inferiores da deep web e dark web. Também cobre outras camadas de segurança, usando proxychains para não mostrar seu endereço IP.
-> [!WARNING]
-> É interessante também usar o Veracrypt e VPNs se você for entrar nas camadas inferiores. Tenha cuidado com suas ações.
+## i2p-connection-frame
 
-![images](https://github.com/thaleshodan/i2p-conection-frame/assets/173853965/c6d3e8b3-2928-4ba7-b0c9-9d09bb53abec)
+Um modelo de integração com a rede anônima I2P (Invisible Internet Project), focado em garantir anonimato, segurança de dados e resistência à censura. Esta aplicação fornece uma estrutura de configuração e orientação para uso consciente da Internet profunda, camadas da dark web e ferramentas complementares de privacidade como proxychains, VPN e criptografia com VeraCrypt.
 
-I2P (Invisible Internet Project) é uma rede de anonimato que permite a comunicação segura e privada através da Internet. Ao contrário da navegação tradicional na web, onde os dados podem ser monitorados e rastreados, o I2P utiliza um conjunto de técnicas avançadas para proteger a identidade e a localização dos seus utilizadores,Semelhante ao Tor, o I2P utiliza o roteamento onion  para criptografar as comunicações em várias camadas. No entanto, ao invés de direcionar o tráfego através da internet pública, o I2P cria uma rede interna de roteadores que transmitem mensagens de forma anônima.
+    Aviso: Para acessar camadas inferiores da rede, recomenda-se o uso de VPNs, criptografia de disco com VeraCrypt e práticas rigorosas de segurança operacional. A responsabilidade pelo uso desta tecnologia é inteiramente do usuário.
 
-O I2P emprega uma técnica chamada roteamento (garlic), onde múltiplas mensagens são agrupadas em um único pacote criptografado. Isso dificulta ainda mais a correlação entre remetente e destinatário, aumentando o anonimato Para cada conexão, o I2P estabelece túneis de entrada e de saída separados, o que significa que o caminho dos dados de entrada é diferente do caminho dos dados de saída. Esse método impede que qualquer nó intermediário tenha conhecimento completo do percurso das mensagens. 
+Visão Geral
 
-Privacidade e Anonimato: O I2P é amplamente utilizado por indivíduos e organizações que buscam proteger sua privacidade e evitar censura. Isso inclui jornalistas, ativistas, e cidadãos em países com regimes opressivos.
+O I2P é uma rede sobreposta (overlay network) que permite comunicações anônimas, utilizando técnicas de roteamento em múltiplas camadas (garlic routing). Ao contrário do Tor, que se conecta à Internet tradicional, o I2P forma uma rede interna descentralizada entre pares.
 
-Segurança de Dados: A criptografia forte e o roteamento descentralizado do I2P protegem os dados contra interceptação e monitoramento, tornando-o uma escolha robusta para comunicações seguras.
+A arquitetura baseia-se em:
 
-Resiliência a Censura: Por ser uma rede distribuída e anônima, o I2P é resistente a tentativas de censura e bloqueio por parte de governos ou outras entidades.
+    Criptografia de ponta a ponta
 
-## INSTALAÇÃO DA I2P NO WINDOWS
+    Roteamento Garlic
 
-- acessar a pagína da i2p  https://geti2p.net/en/
-- baixar arquivo .exe no seu navegador
-- executar o arquivo .exe
+    Túneis separados de entrada e saída
 
-## CONFIGURAÇÃO DA REDE I2P NO WINDOWS
+    Alta resistência a censura
 
-Após a instalação, abra o atalho do I2P que foi criado no menu Iniciar ou na área de trabalho.<br>
-O I2P iniciará e abrirá uma página web no seu navegador padrão (geralmente em http://127.0.0.1:7657
+Funcionalidades
 
-## INSTALAÇÃO DA REDE I2P NO LINUX 
+    Configuração da rede I2P no Linux e Windows
 
-adicionar repo I2P
+    Acesso seguro ao painel local I2P (http://127.0.0.1:7657)
 
-```bash
+    Aplicação de proxychains para redirecionamento de tráfego
+
+    Integração com navegadores via túnel local
+
+    Orientações para endurecimento da segurança pessoal
+
+Instalação - Windows
+
+    Acesse: https://geti2p.net/en/
+
+    Baixe o instalador .exe
+
+    Execute o instalador e conclua a instalação
+
+    Ao iniciar o serviço, o painel de controle será aberto automaticamente no navegador (http://127.0.0.1:7657)
+
+Instalação - Linux
+Adicionando o repositório
+
 echo "deb http://deb.i2p2.de/ unstable main" | sudo tee /etc/apt/sources.list.d/i2p.list
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xE6C1A57B
-```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0xE6C1A57B 
 
-ATUALIZAR OS PACOTES DO LINUX
-```bash
+Atualizando os pacotes
+
 sudo apt-get update
-```
 
-instalar a conexão I2P
-```bash
+Instalando o I2P
+
 sudo apt-get install i2p
-```
 
-INICIALIZAR A CONEXÃO I2P
-```bash
+Iniciando o serviço
+
 sudo service i2p start
-```
+
+Configuração Avançada
+
+    Use proxychains com i2p para redirecionar o tráfego de aplicações específicas.
+
+    Integre com ferramentas como browsers, crawlers ou scanners para navegação segura.
+
+    Combine com VPN e DNS seguros para uma stack de privacidade mais robusta.
